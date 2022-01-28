@@ -12,26 +12,29 @@ body {
   height: 100vh;
   width: 100vw;
   position: relative;
-  overflow-y: hidden;
-  .dashboard{
+  overflow-x: hidden;
+
+  .dashboard {
     z-index: 1;
     display: grid;
     grid-template-columns: 20% 80%;
     height: 100vh;
     position: relative;
   }
+
   .shapes_1 {
     position: absolute;
-    background-color: rgb(255,0,64);
+    background-color: rgb(255, 0, 64);
     height: 10rem;
     width: 10rem;
     left: 15rem;
     top: 2rem;
     transform: rotate(30deg);
   }
+
   .shapes_2 {
     position: absolute;
-    background-color: rgb(255,0,64);
+    background-color: rgb(255, 0, 64);
     height: 10rem;
     width: 10rem;
     left: 35rem;
@@ -39,9 +42,10 @@ body {
     transform: rotate(30deg);
     border-radius: 100%;
   }
+
   .shapes_3 {
     position: absolute;
-    background-color: rgb(255,0,64);
+    background-color: rgb(255, 0, 64);
     height: 10rem;
     width: 10rem;
     left: 60rem;

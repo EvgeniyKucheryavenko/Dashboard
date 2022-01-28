@@ -68,8 +68,8 @@ const Transactions = () => {
                                 x2="0"
                                 y2="1"
                             >
-                                <stop offset="30%" stopColor="ff4d6d" opacity={0.4}/>
-                                <stop offset="85%" stopColor="ff4d6d11" opacity={0.2}/>
+                                <stop offset="30%" stopColor="#ff4d6d" opacity={0.4}/>
+                                <stop offset="85%" stopColor="#ff4d6d11" opacity={0.2}/>
                                 </linearGradient>
                         </defs>
                         <Tooltip/>
