@@ -4,6 +4,7 @@ import Wallets from "./Wallets";
 import Expenses from "./Expenses";
 import Transactions from "./Transactions";
 import Overview from "./Overview";
+import ActivityLog from "./ActivityLog";
 
 const DashboardApp = () => {
     return (
@@ -14,9 +15,10 @@ const DashboardApp = () => {
                     <Wallets/>
                     <Expenses/>
                     <Transactions/>
-                 </div>
+                </div>
                 <div className="app__grid__2">
                     <Overview/>
+                    <ActivityLog/>
                 </div>
             </div>
         </div>

@@ -1,0 +1,91 @@
+@mixin overview {
+  .overview {
+    height: 50%;
+    width: 100%;
+    color: #fff;
+
+    &__title {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 1rem;
+
+      .title__buttons {
+        display: flex;
+        gap: 1rem;
+
+        button {
+          border-radius: 2rem;
+          padding: 0.2rem 1rem;
+          border: none;
+          cursor: pointer;
+
+          &:nth-of-type(2) {
+            background-color: #ff3d6d;
+            color: #ffffff;
+          }
+        }
+      }
+    }
+
+    &__graph {
+      height: 30%;
+    }
+  }
+  .overview__info {
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 0.4rem;
+
+    .outer {
+      display: flex;
+      align-items: center;
+
+      .info__out {
+        width: 40%;
+      }
+
+      .info__in {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+      }
+    }
+
+
+  }
+}
+.overview__insights {
+  margin: 1rem 0;
+  display: flex;
+  gap: 4rem;
+
+  .insight {
+    div {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+  }
+}
+.overview__expand {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  button {
+    padding: 0.8rem 4rem;
+    border-radius: 2rem;
+    border: none;
+    cursor: pointer;
+    background-color: #ff4d6d;
+    transition: 0.4s ease-in-out;
+    border: solid 3px #ff3d6d;
+    &:hover {
+      background-color: #fff;
+      color: #ff3d6d;
+
+    }
+  }
+}
