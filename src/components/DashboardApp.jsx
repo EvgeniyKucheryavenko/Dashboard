@@ -1,9 +1,9 @@
 import React from 'react';
-
+import Navbar from "./Navbar";
 const DashboardApp = () => {
     return (
-        <div>
-            
+        <div className="app">
+            <Navbar/>
         </div>
     );
 };
