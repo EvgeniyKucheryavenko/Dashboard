@@ -1,7 +1,8 @@
-import React from 'react';
-import {BsThreeDots} from "react-icons/bs";
+import React from "react";
 
-const ActivityLog = () => {
+import { BsThreeDots } from "react-icons/bs";
+
+export default function ActivityLog() {
     const data = [
         {
             day: "Sun",
@@ -28,12 +29,11 @@ const ActivityLog = () => {
             status: "Account",
         },
     ];
-
     return (
         <div className="activity">
             <div className="activity__info">
-                <h4>activity Info</h4>
-                <BsThreeDots/>
+                <h4>Wallets</h4>
+                <BsThreeDots />
             </div>
             <div className="activity__container">
                 {data.map((transaction) => {
@@ -43,18 +43,15 @@ const ActivityLog = () => {
                                 <h5>{transaction.day}</h5>
                                 <h6>{transaction.date}</h6>
                             </div>
-                            <div className="dot">
-                                <div className="details">
-                                    <h5>{transaction.name}</h5>
-                                    <h5>{transaction.status}</h5>
-                                </div>
+                            <div className="dot"></div>
+                            <div className="details">
+                                <h5>{transaction.name}</h5>
+                                <h5>{transaction.status}</h5>
                             </div>
                         </div>
-                    )
+                    );
                 })}
             </div>
         </div>
     );
-};
-
-export default ActivityLog;
+}

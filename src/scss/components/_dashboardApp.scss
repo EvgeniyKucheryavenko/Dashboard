@@ -27,7 +27,8 @@
       display: flex;
       flex-direction: column;
       gap: 3rem;
-      @include overview
+      @include overview;
+      @include activity;
     }
   }
 }
